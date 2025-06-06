@@ -16,7 +16,7 @@
     </n-flex>
     <n-flex :size="4" class="text" align="center" vertical>
       <n-p depth="3">
-        <n-text depth="3" @click="jumpLink(linkData.github)">
+        <n-text depth="3" @click="jumpLink(metaData.project)">
           SiteStatus
         </n-text>
         Version {{ version }}
@@ -32,7 +32,7 @@
       </n-p>
       <n-p depth="3">
         Copyright &copy; 2020 - {{ new Date().getFullYear() }}
-        <n-text depth="3" @click="jumpLink(linkData.home)"> IMSYY </n-text>
+        <n-text depth="3" @click="jumpLink(metaData.author)"> GAMER </n-text>
         <n-text
           v-if="siteIcp"
           depth="3"
@@ -50,9 +50,13 @@ const { public: configPublic } = useRuntimeConfig();
 const { siteIcp, version } = configPublic;
 
 const linkData = {
-  github: "https://github.com/imsyy/site-status",
-  home: "https://www.imsyy.top",
-  email: "mailto:one@imsyy.top",
+  github: "https://github.com/",
+  home: "https://02Gamer.top/",
+  email: "mailto:email@xxxsl.com",
+};
+const metaData = {
+  author: "https://02gamer.top/",
+  project: "https://github.com/imsyy/site-status",
 };
 </script>
 
