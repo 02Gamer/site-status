@@ -52,7 +52,7 @@ const { siteIcp, version } = configPublic;
 const linkData = {
   github: "https://github.com/",
   home: "https://02Gamer.top/",
-  email: "mailto:email@xxxsl.com",
+  email: "mailto:i@xxxsl.com",
 };
 const metaData = {
   author: "https://02gamer.top/",
